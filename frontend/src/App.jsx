@@ -28,8 +28,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={authUser?<Homepage/>:<Navigate to="/login"/>}/>
-        <Route path="/signup" element={authUser?<SignupPage/>:<Navigate to="/"></Navigate>}/>
-        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/signup" element={!authUser?<SignupPage/>:<Navigate to="/"></Navigate>}/>
+        <Route path="/login" element={!authUser?<LoginPage/>:<Navigate to="/"/>}/>
         <Route path="/settings" element={<SettingPage/>}/>
         <Route path="/profile" element={authUser?<Profilepage/>:<Navigate to="/login"></Navigate>}/>
       </Routes>

@@ -1,12 +1,8 @@
-import daisyui from "daisyui"
-// filepath: /c:/Users/subha/Desktop/projects/React/Whispr/frontend/tailwind.config.js
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Ensure correct paths
   theme: {
     extend: {},
   },
-  plugins: [daisyui,],
-}
+  plugins: [require("daisyui")], // Add DaisyUI here
+};

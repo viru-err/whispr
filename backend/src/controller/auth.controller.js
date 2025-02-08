@@ -96,11 +96,11 @@ export const updateProfile =async(req,res)=>{
     res.status(500).json({messagge:"internal server error"});
    } 
 };
-export const checkAuth=(res,req)=>{
+export const checkAuth=(req,res)=>{
     try {
         res.status(200).json(req.user);
     } catch (error) {
-        console.log("error in checkauth controller",error.message)
-       res.status(500).json({message:"Internal server error"})
+        console.log("error in checkauth controller",error.message);
+       res.status(500).json({message:"Internal server error"});
     }
 };

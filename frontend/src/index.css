@@ -1,4 +1,1 @@
-/* filepath: /c:/Users/subha/Desktop/projects/React/Whispr/frontend/src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
