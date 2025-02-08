@@ -2,10 +2,7 @@
   "name": "whispr",
   "version": "1.0.0",
   "description": "real time chat-app",
-  "homepage": "https://github.com/viru-err/whispr#readme",
-  "bugs": {
-    "url": "https://github.com/viru-err/whispr/issues"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/viru-err/whispr.git"
