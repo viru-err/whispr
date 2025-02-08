@@ -1,0 +1,21 @@
+{
+  "name": "whispr",
+  "version": "1.0.0",
+  "description": "real time chat-app",
+  "homepage": "https://github.com/viru-err/whispr#readme",
+  "bugs": {
+    "url": "https://github.com/viru-err/whispr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viru-err/whispr.git"
+  },
+  "license": "ISC",
+  "author": "viru kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  }
+}
